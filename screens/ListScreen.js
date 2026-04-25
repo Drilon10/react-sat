@@ -1,14 +1,14 @@
 import React from "react";
-import { Text, View, StyleSheet, FlatList } from "react-native";
+import { Text, View, StyleSheet, FlatList, Button } from "react-native";
 
 const students = [
     {name: 'Bledar', lastname: "Abdili", age: '15'},
     {name: 'Naron', lastname: "Emurllai", age: '15'},
     {name: 'Viola', lastname: "Ismaili", age: '14'},
-    {name: 'Viola', lastname: "Ismaili", age: '14'}
+    {name: 'Viola1', lastname: "Ismaili1", age: '141'}
 ]
 
-const ListScreen = () => {
+const ListScreen = (props) => {
     return (
         <View>
             <Text style={styles.textStyle}>List of Students</Text>
@@ -22,6 +22,11 @@ const ListScreen = () => {
                 }}
 
             />
+
+            <Button
+                title="Go Back"
+                onPress={() => props.navigation.goBack()}
+            ></Button>
         </View>
     );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View } from 'react-native';
 
 const ExerciseScreen = () => {
-    let message = "Hello World!";ds
+    let message = "Hello World!";
 
     message = "Test";
     
