@@ -34,8 +34,38 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         padding: 20,
         borderWidth: 1,
-        borderColor: '#ddd'
+        borderColor: '#ddd',
+        borderBottomWidth: 0,
+        shadowColor: "#000",
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.8,
+        shadowRadius: 12,
+        elevation: 1
+    },
+
+    btn: {
+        backgroundColor: '#ffd700',
+        borderRadius: 50,
+        paddingHorizontal: 10,
+        paddingVertical: 5
+    },
+
+    btnText: {
+        fontWeight: 'bold',
+        color: 'white'
+    },
+
+    fullName: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        color: '#333'
+    },
+
+    desc: {
+        textAlign: 'center'
     }
+    
 });
 
 export default ProfileInfo;
