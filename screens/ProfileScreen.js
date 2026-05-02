@@ -6,7 +6,12 @@ import Project from "../components/Project";
 const ProfileScreen = () => {
     return(
         <View style={styles.screen}>
-            <ProfileInfo></ProfileInfo>
+            <ProfileInfo
+                fullName="John Doe"
+                jobPosition="Full-Stack Developer"
+                desc="I`m passionate about creating Web and Mobile Applications"
+                image={require('../assets/profile.jpg')}
+            ></ProfileInfo>
 
             <View style={styles.heading}>
                 <Text style={styles.text}>PROJECTS</Text>
@@ -25,10 +30,31 @@ const ProfileScreen = () => {
 }
 
 const styles = StyleSheet.create({
+    heading: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginHorizontal: 15,
+        alignItems: 'center',
+        marginVertical: 15
+    },
+    screen: {
+        backgroundColor: 'white'
+    },
+
     text: {
-        textAlign: 'center',
-        fontSize: 20,
-        marginVertical: 20
+        fontWeight: 'bold',
+        fontSize: 16
+    },
+    btn: {
+        backgroundColor: '#ffd700',
+        borderRadius: 50,
+        paddingHorizontal: 10,
+        paddingVertical: 5
+    },
+
+    btnText: {
+        fontWeight: 'bold',
+        color: 'white'
     }
 })
 

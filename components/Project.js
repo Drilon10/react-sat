@@ -12,7 +12,15 @@ const Project = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginBottom: 20
+    },
+
+    img: {
+        width: 150,
+        height: 150,
+        borderRadius: 10
     }
 });
 
