@@ -6,15 +6,21 @@ const MenuScreen = (props) => {
     return(
         <View>
             <Text style={styles.text}>Welcome to menu screen</Text>
-            <Button
+            {/* <Button
                 title="Go to List Screen"
                 onPress={() => {props.navigation.navigate("List")}}
-            ></Button>
+            ></Button> */}
 
             <TouchableOpacity
                 onPress={() => props.navigation.navigate("Students")}
                 >
                 <Text style={styles.touch}>Go To Students Page</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Profile")}
+                >
+                <Text style={styles.touch}>Profile Page</Text>
             </TouchableOpacity>
         </View>
     )
