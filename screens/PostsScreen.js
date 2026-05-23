@@ -24,10 +24,9 @@ class PostsScreen extends React.Component {
                     keyExtractor={posts => posts.id}
                     data={posts}
                     renderItem={({item}) => (
-                        <View>
-                            <Text>{item.id}</Text>
-                            <Text>{item.title}</Text>
-                            <Text>{item.body}</Text>
+                        <View style={styles.container}>
+                            <Text style={styles.title}>{item.title}</Text>
+                            <Text style={styles.body}>{item.body}</Text>
                         </View>
                     )}
                 ></FlatList>
@@ -36,5 +35,22 @@ class PostsScreen extends React.Component {
     }
 }
 
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: 'white',
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: 'gray',
+        margin: 10,
+        padding: 10
+    },
+
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#333',
+        textTransform: 'capitalize'
+    }
+});
 
 export default PostsScreen;
