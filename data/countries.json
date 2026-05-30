@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Cappadocia",
+        "country": "Turkiye",
+        "description": "Cappadocia a semi-arid region in central Turkiye"
+    },
+
+    {
+        "id": 2,
+        "name": "Philippines",
+        "country": "Banaue",
+        "description": "Banaue a semi-arid region in central Turkiye"
+    },
+
+    {
+        "id": 3,
+        "name": "Vienna",
+        "country": "Austria",
+        "description": "Viena a semi-arid region in central Turkiye"
+    }
+]

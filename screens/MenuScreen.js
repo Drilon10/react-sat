@@ -33,6 +33,11 @@ const MenuScreen = (props) => {
                 >
                 <Text style={styles.touch}>Posts Screen</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Countries")}
+                >
+                <Text style={styles.touch}>Countries Screen</Text>
+            </TouchableOpacity>
         </View>
     )
 }
