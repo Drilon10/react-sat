@@ -6,10 +6,10 @@ const MenuScreen = (props) => {
     return(
         <View>
             <Text style={styles.text}>Welcome to menu screen</Text>
-            <Button
+            {/* <Button
                 title="Go to List Screen"
                 onPress={() => {props.navigation.navigate("List")}}
-            ></Button>
+            ></Button> */}
 
             <TouchableOpacity
                 onPress={() => props.navigation.navigate("Students")}
@@ -20,7 +20,27 @@ const MenuScreen = (props) => {
             <TouchableOpacity
                 onPress={() => props.navigation.navigate("Profile")}
                 >
+<<<<<<< HEAD
                 <Text style={styles.touch}>Go To Profile Page</Text>
+=======
+                <Text style={styles.touch}>Profile Page</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Box")}
+                >
+                <Text style={styles.touch}>Box Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Posts")}
+                >
+                <Text style={styles.touch}>Posts Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("Countries")}
+                >
+                <Text style={styles.touch}>Countries Screen</Text>
+>>>>>>> 743543fd6e3f9f324221817bbbc7571a99b695c7
             </TouchableOpacity>
         </View>
     )
